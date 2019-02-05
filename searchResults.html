@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <!--
-==============================
-page 2 - list of restaurants
-==============================
--->
-
+   ==============================
+   page 2 - list of restaurants
+   ==============================
+   -->
 <html>
-<head>
-  <meta http-aquiv="content-type" content="text/html; charset=uft-8" />
-<title> Search results </title>
-<style type="text/css">
-  @import url("searchResults.css");
-</style>
-<script type="text/javascript" src="searchBar.js"></script>
-</head>
-
-<body>
-  <div class="split right">
-    <p>Results</p>
-
-  </div>
-  <div class="split left">
-  <p>Philly Phoodies</p>
-  <input type="text" id="searchEntry" placeholder="Search" /></br>
-
-  <select class="dropdown1" name="price" id="price">
-    <option value="$">$</option>
-    <option value="$$">$$</option>
-    <option value="$$$">$$$</option>
-    <option value="$$$$">$$$$</option>
-  </select></br>
-
-  <select class="dropdown2" name="distance" id="distance">
-    <option value="1MileAway">1 Mile Away</option>
-    <option value="3MileAway">3 Miles Away</option>
-    <option value="5MileAway">5 Miles Away</option>
-    <option value="7MileAway">7 Miles Away</option>
-  </select></br>
-
-  <input type="button" id="enter" value="Enter" />
-</div>
-</body>
-
+   <head>
+      <meta http-aquiv="content-type" content="text/html; charset=uft-8" />
+      <title> Search results </title>
+      <style type="text/css">
+         @import url("searchResults.css");
+      </style>
+      <script type="text/javascript" src="searchBar.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   </head>
+   <body>
+     <div class="container">
+      <div class="row">
+          <div class="col-3">
+            <div>
+               <p>Philly Phoodies</p>
+               <input type="text" id="searchEntry" placeholder="Search" /></br>
+               <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+               <select class="dropdown1" name="price" id="price">
+                  <option value="$">$</option>
+                  <option value="$$">$$</option>
+                  <option value="$$$">$$$</option>
+                  <option value="$$$$">$$$$</option>
+               </select>
+               </br>
+               <select class="dropdown2" name="distance" id="distance">
+                  <option value="1MileAway">1 Mile Away</option>
+                  <option value="3MileAway">3 Miles Away</option>
+                  <option value="5MileAway">5 Miles Away</option>
+                  <option value="7MileAway">7 Miles Away</option>
+               </select>
+               </br>
+               <input type="button" id="enter" value="Enter" />
+            </div>
+          </div>
+        </div>
+          <div class="col-9">
+            <div>
+               <p>Results</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="columns">
+         <div>
+            <p>Results</p>
+         </div>
+         <div>
+            <p>Philly Phoodies</p>
+            <input type="text" id="searchEntry" placeholder="Search" /></br>
+            <select class="dropdown1" name="price" id="price">
+               <option value="$">$</option>
+               <option value="$$">$$</option>
+               <option value="$$$">$$$</option>
+               <option value="$$$$">$$$$</option>
+            </select>
+            </br>
+            <select class="dropdown2" name="distance" id="distance">
+               <option value="1MileAway">1 Mile Away</option>
+               <option value="3MileAway">3 Miles Away</option>
+               <option value="5MileAway">5 Miles Away</option>
+               <option value="7MileAway">7 Miles Away</option>
+            </select>
+            </br>
+            <input type="button" id="enter" value="Enter" />
+         </div>
+      </div> -->
+   </body>
 </html>

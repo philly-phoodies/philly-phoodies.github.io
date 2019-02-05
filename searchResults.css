@@ -3,7 +3,7 @@ p {
     font-size: 2em;
     font-family: "Georgia";
 }
-input[type=text], select {
+/* input[type=text], select {
   width: 10%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -44,19 +44,6 @@ input[type=button] {
  border-radius: 10px;
  cursor: pointer;
 }
-.split {
-  height: 100%;
-  width: 80%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-.left {
-  left: 50  
-}
-
-.right {
-  right: 0;
-}
+.columns{
+  columns: 250px;
+} */
