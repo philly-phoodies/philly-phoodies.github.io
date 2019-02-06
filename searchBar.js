@@ -10,7 +10,7 @@ var enter_click = function () {
   alert (searchEntry);
   alert (price);
   alert (distance);
-  window.location="file:///Users/KatieMarie/Desktop/Drexel/201825/CI%20103/searchResults.html";
+  window.location="./searchResults.html";
 
   if ( searchEntry == Pizza || pizza) {
     window.location="https://www.google.com";
