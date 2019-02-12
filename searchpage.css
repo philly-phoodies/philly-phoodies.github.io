@@ -21,7 +21,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 input[type=button] {
-  width: 6%;
+  width: 8%;
   background-color: #999999;
   color: white;
   padding: 12px 20px;
@@ -42,7 +42,7 @@ input[type=button] {
   cursor: pointer;
 }
 .dropdown2 {
- width: 9%;
+ width: 12%;
  height: 36px;
  background-color: #999999;
  color: white;
