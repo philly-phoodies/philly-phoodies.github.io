@@ -9,19 +9,24 @@ var enter_click = function () {
   var distance = $("distance").value;
 
   const Http = new XMLHttpRequest();
-  const url='https://jsonplaceholder.typicode.com/posts';
+  const url='http://localhost:5000/searchrestaurant/' + searchEntry;
   Http.open("GET",url);
   Http.send();
   Http.onreadystatechange=(e)=>{console.log(Http.responseText)};
 
+
+
   alert (searchEntry);
   alert (price);
   alert (distance);
-  window.location="./searchResults.html";
 
-  if ( searchEntry == Pizza || pizza) {
-    window.location="https://www.google.com";
-  }
+
+
+  // window.location="./searchResults.html";
+
+  // if ( searchEntry == Pizza || pizza) {
+  //   window.location="https://www.google.com";
+  // }
 }
 window.onload = function () {
   $("enter").onclick = enter_click;
