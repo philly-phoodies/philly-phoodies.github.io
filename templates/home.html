@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+		<h1>Home Page</h1>
+			<center><div>
+	    <center> <p>PHILLY PHOODIES</p></center>
+
+	    <form class="form" method='POST' action="{{ url_for('search') }}">
+	    <input type='text' name='searchEntry' id='searchEntry'  placeholder='Search'/></br>
+
+	    <select class="dropdown1" name="price" id="price">
+	      <option value="$">$</option>
+	      <option value="$$">$$</option>
+	      <option value="$$$">$$$</option>
+	      <option value="$$$$">$$$$</option>
+	    </select>
+
+	    <select class="dropdown2" name="distance" id="distance">
+	      <option value="1MileAway">1 Mile Away</option>
+	      <option value="3MileAway">3 Miles Away</option>
+	      <option value="5MileAway">5 Miles Away</option>
+	      <option value="7MileAway">7 Miles Away</option>
+	    </select>
+
+	    <input type="submit" id="enter" value="Enter" />
+
+
+	    </br>
+	    <img src="skyline.jpg" alt="skyline"
+	    style="width:70%">
+	</form>
+	</div></center>
+{% endblock content %}
