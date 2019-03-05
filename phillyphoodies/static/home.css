@@ -4,6 +4,11 @@ body {
   margin-top: 5rem;
 }
 
+.title {
+  color: #444444;
+  font-size: 60px; 
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
@@ -12,8 +17,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #5f788a;
 }
 
+.navbar {
+	background-color: #FE9CE1;
+}
+
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #010101;
 }
 
 .site-header .navbar-nav .nav-link:hover {
