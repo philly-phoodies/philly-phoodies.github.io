@@ -7,7 +7,7 @@ from dbconnect import connection
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '09ijdh5h4987hfbc'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/PhillyPhoodies'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['DEBUG'] = True
 db = SQLAlchemy(app)
