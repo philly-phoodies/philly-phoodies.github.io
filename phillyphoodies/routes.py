@@ -79,9 +79,10 @@ def homeresult():
 	results = Users.query.all()
 	return json.dumps(results, cls=AlchemyEncoder)
 
-@app.route("/search/<searchitem>", methods=["GET"])
-def search(searchitem):
-	pass
+@app.route("/search", methods=["GET", "POST"])
+def search():
+	searchbar = request.form.get("searchbar")
+	return "searchitem : %s"  %(searchbar)
 
 @app.route("/searchrestaurant/<restaurant>", methods = ["GET"])
 def searchrestaurant(restaurant):
