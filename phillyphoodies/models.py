@@ -10,20 +10,18 @@ def load_user(user_id):
 
 class User(db.Model, UserMixin):
 	__tablename__ = 'Users'
-	id = db.Column(db.Integer, primary_key=True)
-	username = db.Column(db.String(20), unique=True, nullable=False)
-	email = db.Column(db.String(120), unique=True, nullable=False)
-	image_file = db.Column(db.String(20), nullable=False, default='default.jpg')
-	password = db.Column(db.String(60), nullable=False)
-	location = db.Column(db.String(128), nullable=False)
+	UserID = db.Column(db.Integer, primary_key=True, autoincrement=True)
+	UserName = db.Column(db.String(20), unique=True, nullable=False)
+	Email = db.Column(db.String(120), unique=True, nullable=False)
+	UserPassword = db.Column(db.String(60), nullable=False)
 
-	def __init__(self, id, username, email, image_file, password, location):
-		self.id = id
-		self.username = username
-		self.email = email
-		self.image_file = image_file
-		self.password = password
-		self.location = location
+	def __init__(self, UserName, Email, Password):
+		self.UserName = UserName
+		self.Email = Email
+		self.UserPassword = Password
+
+	def get_id(self):
+		return(self.UserID)
 
 class Restaurant(db.Model):
 	__tablename__ = "Restaurant"
